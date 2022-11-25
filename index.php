@@ -13,20 +13,25 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container w-50 bg-light p-5 mt-5">
         <form action="script.php" method="get">
-            <div class="paragrafo">
-                <label for="paragr">Paragrafo</label>
-                <input name="paragr" id="paragr" type="text">
-                <small>Inserisci un paragrafo</small>
+
+            <div class="form_box">
+                <div class="paragrafo">
+                    <label for="paragr">Inserisci un paragrafo</label>
+                    <input name="paragr" id="paragr" type="text">
+
+                </div>
+
+                <div class="parola my-3">
+                    <label for="parola">Inserisci una parola da censurare</label>
+                    <input name="parola" id="paragr" type="text">
+
+                </div>
             </div>
-
-            <div class="parola">
-                <label for="parola">Parola</label>
-                <input name="parola" id="paragr" type="text">
-                <small>Inserisci una parola</small>
-
-                <button type="submit">invia</button>
+            <div class="buttons pt-3 text-center">
+                <button class="border-0 btn btn-success " type="submit">invia</button>
+                <button class="border-0 btn btn-warning text-white" type="reset">cancella</button>
             </div>
         </form>
     </div>
